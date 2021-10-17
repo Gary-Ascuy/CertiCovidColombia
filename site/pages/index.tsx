@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import Metadata from '../lib/components/Metadata'
-import Seo from '../lib/components/Seo'
-import Header from '../lib/components/Header'
-import Home from '../lib/components/Home'
-import Footer from '../lib/components/Footer'
+import Metadata from '../components/Metadata'
+import Seo from '../components/Seo'
+import Header from '../components/Header'
+import Home from '../components/Home'
+import Footer from '../components/Footer'
 
 const Index: NextPage = () => {
   return (

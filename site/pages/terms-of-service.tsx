@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Footer from '../lib/components/Footer'
+import Footer from '../components/Footer'
 
-import Header from '../lib/components/Header'
-import Metadata from '../lib/components/Metadata'
-import Seo from '../lib/components/Seo'
+import Header from '../components/Header'
+import Metadata from '../components/Metadata'
+import Seo from '../components/Seo'
 
 const TermsOfService: NextPage = () => {
   return (

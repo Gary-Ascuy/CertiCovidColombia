@@ -1,4 +1,4 @@
-import { VaccinationInformation } from '../models/VaccinationInformation'
+import { VaccinationInformation } from '../lib/models/VaccinationInformation'
 
 export interface PreviewProps {
   person: VaccinationInformation

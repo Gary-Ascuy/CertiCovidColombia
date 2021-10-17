@@ -10,15 +10,15 @@ import Step from './Step'
 import Preview from './Preview'
 import Loading from './Loading'
 
-import { ResponsePayload } from '../models/ResponsePayload'
-import { VaccinationInformation } from '../models/VaccinationInformation'
+import { ResponsePayload } from '../lib/models/ResponsePayload'
+import { VaccinationInformation } from '../lib/models/VaccinationInformation'
 
-import { getValidationError } from '../services/utils/validation'
-import { getUrlFromFile } from '../services/import/file'
-import { exportToPdf } from '../services/export/pdf'
-import { exportToPass } from '../services/export/pass'
+import { getValidationError } from '../lib/services/utils/validation'
+import { getUrlFromFile } from '../lib/services/import/file'
+import { exportToPdf } from '../lib/services/export/pdf'
+import { exportToPass } from '../lib/services/export/pass'
 
-import * as ga from '../ga'
+import * as ga from '../lib/ga'
 
 const QrReader = dynamic(() => import('react-qr-reader'), { ssr: false })
 
