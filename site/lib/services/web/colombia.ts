@@ -14,7 +14,7 @@ export function normalizeValue(value: string): string {
 }
 
 export async function getData(url: string): Promise<ResponsePayload<any>> {
-  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0' // workarround
 
   const html = await getBuffer(url)
   const dom = new JSDOM(html)
