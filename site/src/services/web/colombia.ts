@@ -1,8 +1,8 @@
 import { JSDOM } from 'jsdom'
 import { camelCase } from 'lodash'
 
-import { ResponsePayload } from '../../models/ResponsePayload'
-import { getBuffer } from '../utils/fetch'
+import { ResponsePayload } from '../../../lib/models/ResponsePayload'
+import { getBuffer } from '../../../lib/services/utils/fetch'
 
 export function normalizeKey(value: string): string {
   const [, name] = value.trim().split('/') || []

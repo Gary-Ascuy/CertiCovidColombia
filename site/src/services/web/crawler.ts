@@ -2,10 +2,10 @@ import { JSDOM } from 'jsdom'
 import { upperCase } from 'lodash'
 import manager from 'cache-manager'
 
-import { getBuffer } from '../utils/fetch'
-import { VaccinationInformation } from '../../models/VaccinationInformation'
-import { ResponsePayload } from '../../models/ResponsePayload'
-import { getValidationError } from '../utils/validation'
+import { getBuffer } from '../../../lib/services/utils/fetch'
+import { VaccinationInformation } from '../../../lib/models/VaccinationInformation'
+import { ResponsePayload } from '../../../lib/models/ResponsePayload'
+import { getValidationError } from '../../../lib/services/utils/validation'
 
 const cache = manager.caching({ store: 'memory', max: 100, ttl: 60 })
 

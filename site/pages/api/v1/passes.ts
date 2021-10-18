@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 import { buildApplePass } from '../../../lib/services/export/apple'
-import { getData } from '../../../lib/services/web/crawler'
+import { getData } from '../../../src/services/web/crawler'
 import { getCacheTemplate } from '../../../lib/services/utils/template'
 
 export default async function handler(

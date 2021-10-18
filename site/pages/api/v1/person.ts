@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 import { ResponsePayload } from '../../../lib/models/ResponsePayload'
 import { VaccinationInformation } from '../../../lib/models/VaccinationInformation'
-import { getData } from '../../../lib/services/web/crawler'
+import { getData } from '../../../src/services/web/crawler'
 
 export default async function handler(
   req: NextApiRequest,
